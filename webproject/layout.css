@@ -1,0 +1,143 @@
+ /*
+ video game wars layout
+   Author: Brent Hornig
+   Date:   12/3/2016
+   filename layout.css
+   */
+/*Page one layout*/
+body h1{
+	float:top;
+	border-top-left-radius:50px;
+	border-bottom-left-radius:50px;
+	border-bottom-right-radius:50px;
+	border-top-right-radius:50px;
+	padding:5px;
+}
+nav{
+	
+	position:absolute;
+	left:100px;
+	top:175px;
+	line-height:100px;
+	border-top-left-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	border-top-right-radius:30px;
+	padding:5px;
+	
+	
+}
+aside{
+	position:absolute;
+	left:950px;
+	top:175px;
+	border-top-left-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	border-top-right-radius:30px;
+	padding:5px;
+}
+article h2.tophead{
+	position:absolute;
+	left:300px;
+	top:145px;
+	color:white;
+	border-top-left-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	border-top-right-radius:30px;
+	padding:5px;
+}
+p.intro{
+	
+	text-align:center;
+	min-width:600px;
+	max-width:600px;
+	position:absolute;
+	left:300px;
+	top:175px;
+	border-top-left-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	border-top-right-radius:30px;
+	padding:5px;
+	
+}
+section{
+	
+	text-align:center;
+	
+}
+table{
+	min-width:600px;
+	max-width:600px;
+	position:absolute;
+	left:300px;
+	top:475px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+
+}
+a.toplink{
+	position:absolute;
+	left:300px;
+	top:960px;
+	text-align:center;
+	padding-right:5px;
+	padding-left:5px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+}
+/*secondary pages*/
+article.features{
+	position:absolute;
+	left:300px;
+	top:680px;
+	text-align:left;
+	padding-left:5px;
+	padding-right:5px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+}
+article.games{
+	position:absolute;
+	left:300px;
+	top:500px;
+	text-align:left;
+	padding-left:5px;
+	padding-right:5px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+}
+a.toplink2{
+	position:absolute;
+	left:300px;
+	top:855px;
+	text-align:center;
+	padding-left:5px;
+	padding-right:5px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+}
+#NewsLetter{
+	position:absolute;
+	left:300px;
+	top:825px;
+	text-align:center;
+	padding-right:5px;
+	padding-left:5px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+}

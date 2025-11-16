@@ -1,0 +1,131 @@
+/*
+ video game wars styles
+   Author: Brent Hornig
+   Date:   12/3/2016
+   file name styles.css*/
+/*header */
+   body{background: linear-gradient(left,rgb(3, 175, 35) ,rgb(0,0,0) 50%,rgb(0, 51, 255));
+	background: -o-linear-gradient(left,rgb(3, 175, 35) ,rgb(0,0,0) 50%,rgb(0, 51, 255));
+	background: -moz-linear-gradient(left,rgb(3, 175, 35) ,rgb(0,0,0) 50%,rgb(0, 51, 255));
+	background: -webkit-linear-gradient(left,rgb(3, 175, 35) ,rgb(0,0,0) 50%,rgb(0, 51, 255));
+   }
+   body h1{
+		color:white;
+		background: linear-gradient(left,rgb(0,51,255) ,rgb(0,0,0) 50%,rgb(3,175,35));
+	background: -o-linear-gradient(left,rgb(0,51,255) ,rgb(0,0,0) 50%,rgb(3,175,35));
+	background: -moz-linear-gradient(left,rgb(0,51,255) ,rgb(0,0,0) 50%,rgb(3,175,35));
+	background: -webkit-linear-gradient(left,rgb(0,51,255) ,rgb(0,0,0) 50%,rgb(3,175,35));
+	
+	text-align:center;
+	font-family:fantasy;
+	font-size:75px;
+	font-style:italic;
+	letter-spacing:5px;
+	line-height:100px;
+	
+}
+p.intro{
+	background-color:rgba(242, 19, 19,.7);
+	color:white;
+	-moz-box-shadow:   rgba(255,255,255,.3) 5px 5px 5px;
+	-webkit-box-shadow:    rgba(255,255,255,.3) 5px 5px 5px;
+	box-shadow: rgb(255,255,255,.3) 5px 5px 5px;
+}
+
+/*nav*/
+nav{
+	background-color:rgba(242, 19, 19,.7);
+	color:white;
+	-moz-box-shadow:   rgba(255,255,255,.3) 5px 5px 5px;
+	-webkit-box-shadow:    rgba(255,255,255,.3) 5px 5px 5px;
+	box-shadow: rgb(255,255,255,.3) 5px 5px 5px;
+	
+
+
+}
+nav ul li a{
+	text-decoration:none;
+	color:white;
+	text-align:left;
+}
+table{
+	background-color:rgba(242, 19, 19,.7);
+	color:white;
+	border:2px solid black;
+	-moz-box-shadow:   rgba(255,255,255,.3) 5px 5px 5px;
+	-webkit-box-shadow:    rgba(255,255,255,.3) 5px 5px 5px;
+	box-shadow: rgb(255,255,255,.3) 5px 5px 5px;
+}
+table th,table td {
+	border:1px solid black;
+}
+/*aside*/
+aside{
+	background-color:rgba(242, 19, 19,.7);
+	color:white;
+	text-align:center;
+	-moz-box-shadow:   rgba(255,255,255,.3) 5px 5px 5px;
+	-webkit-box-shadow:    rgba(255,255,255,.3) 5px 5px 5px;
+	box-shadow: rgb(255,255,255,.3) 5px 5px 5px;
+	}
+
+nav ul li a:hover{
+			background: linear-gradient(left,rgb(3, 175, 35) ,rgb(0,0,0) 50%,rgb(0, 51, 255));
+	background: -o-linear-gradient(left,rgb(3, 175, 35) ,rgb(0,0,0) 50%,rgb(0, 51, 255));
+	background: -moz-linear-gradient(left,rgb(3, 175, 35) ,rgb(0,0,0) 50%,rgb(0, 51, 255));
+	background: -webkit-linear-gradient(left,rgb(3, 175, 35) ,rgb(0,0,0) 50%,rgb(0, 51, 255));
+	border-top-left-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	border-top-right-radius:30px;
+	
+	font-size:15px;
+	
+	
+	
+}
+table thead tr{
+	height:70px;
+}
+a.toplink{
+	background-color:rgba(242, 19, 19,.7);
+}
+a.toplink{
+	text-decoration:none;
+	color:black;
+}
+/*page 2*/
+a.toplink2{
+	background-color:rgba(242, 19, 19,.7);
+}
+a.toplink2{
+	text-decoration:none;
+	color:black;
+}
+
+article.games{
+	background-color:rgba(242, 19, 19,.7);
+	color:white;
+	-moz-box-shadow:   rgba(255,255,255,.3) 5px 5px 5px;
+	-webkit-box-shadow:    rgba(255,255,255,.3) 5px 5px 5px;
+	box-shadow: rgb(255,255,255,.3) 5px 5px 5px;
+}
+article.features{
+	background-color:rgba(242, 19, 19,.7);
+	color:white;
+	
+	-moz-box-shadow:   rgba(255,255,255,.3) 5px 5px 5px;
+	-webkit-box-shadow:    rgba(255,255,255,.3) 5px 5px 5px;
+	box-shadow: rgb(255,255,255,.3) 5px 5px 5px;
+}
+#NewsLetter{
+	background-color:rgba(242, 19, 19,.7);
+	color:white;
+	-moz-box-shadow:   rgba(255,255,255,.3) 5px 5px 5px;
+	-webkit-box-shadow:    rgba(255,255,255,.3) 5px 5px 5px;
+	box-shadow: rgb(255,255,255,.3) 5px 5px 5px;
+	
+}
+h2.xboxvid,h2.ps4vid,h2.xboxpic,h2.ps4pic{
+	font-size:15px;
+}
