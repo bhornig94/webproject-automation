@@ -8,7 +8,7 @@ index_pages = ["file:///C:/Users/brent/Desktop/webproject/webproject/index.htm",
                       "file:///C:/Users/brent/Desktop/webproject/webproject/xbox.htm"]
 
 class test:
-    def run (browser):
+    def run (browser,index_pages):
         # Initialize a counter for iterating through the links on a page
         fails=0
         # Initialize a counter for iterating through the web pages
@@ -79,28 +79,31 @@ class test:
                               # Navigate back to the original test page
                     except TimeoutException as te:
                         print(
-                            f"  \u2717 FAIL: Timeout for link index {link_index} ({link_xpath}) on page {page_url}. Error: {te}")
+                            f"  \u2717 FAIL: Timeout for link  ({xpathL}) on page {index_page}. Error: {te}")
                         fails += 1
                     except NoSuchElementException as nsee:
                         print(
-                            f"  \u2717 FAIL: Element missing for link index {link_index} on page {page_url}. Error: {nsee}")
+                            f"  \u2717 FAIL: Element missing for link {xpathL} on page {index_page}. Error: {nsee}")
                         fails += 1
                     except WebDriverException as wde:
-                        print(f"  \u2717 FAIL: WebDriver error on link index {link_index}. Error: {wde}")
+                        print(f"  \u2717 FAIL: WebDriver error on link {xpathL}. Error: {wde}")
                         fails += 1
+
+
                     except Exception as e:
                         # Catch all other unexpected errors
                         print(
-                            f"  \u2717 FAIL: An unexpected error occurred on link index {link_index} on page {page_url}. Error: {e}")
+                            f"  \u2717 FAIL: An unexpected error occurred on link {xpathL} on page {index_page}. Error: {e}")
                         fails += 1
 
 
             except WebDriverException as e:
-                print(f"\nFATAL ERROR: Could not load or interact with page {page_url}. Check if the path is correct and accessible.")
+                print(f"\nFATAL ERROR: Could not load or interact with page {index_page}. Check if the path is correct and accessible.")
                 print(f"Details: {e}")
                 fails += 1
 
-        driver.quit()
+
+
         if fails==0:
             print("All tests passed")
         else:
@@ -108,15 +111,44 @@ class test:
 
 
 def Main():
-    chrome=webdriver.Chrome()
+    try:
+        chrome=webdriver.Chrome()
+        test.run(chrome,index_pages)
+    except WebDriverException as e:
+        print(f"\nERROR: Failed to initialize chrome. Ensure the WebDriver is installed and in your system's PATH.")
+        driver.quit()
+    finally:
+        if chrome:
+            chrome.quit()
+            print("Closed Edge.")
 
     print("chrome start")
-    test.run(chrome)
 
-    firefox = webdriver.Firefox()
+    try:
+        firefox = webdriver.Firefox()
+        test.run(firefox,index_pages)
+    except WebDriverException as e:
+        print(f"\nERROR: Failed to initialize firefox. Ensure the WebDriver is installed and in your system's PATH.")
+        firefox.quit()
+    finally:
+        if firefox:
+            firefox.quit()
+            print("Closed FireFox.")
+
     print("firefox start")
-    test.run(firefox)
+
+    try:
+        edge = webdriver.Edge()
+        test.run(edge,index_pages)
+    except WebDriverException as e:
+        print(f"\nERROR: Failed to initialize Edge. Ensure the WebDriver is installed and in your system's PATH.")
+        edge.quit()
+    finally:
+        if edge:
+            edge.quit()
+            print("Closed edge.")
+
     print("edge start")
-    edge = webdriver.Edge()
-    test.run(edge)
+
+
 Main()
