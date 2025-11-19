@@ -111,6 +111,8 @@ class test:
 
 
 def Main():
+
+    print("chrome start")
     try:
         chrome=webdriver.Chrome()
         test.run(chrome,index_pages)
@@ -122,8 +124,7 @@ def Main():
             chrome.quit()
 
 
-    print("chrome start")
-
+    print("firefox start")
     try:
         firefox = webdriver.Firefox()
         test.run(firefox,index_pages)
@@ -135,8 +136,8 @@ def Main():
             firefox.quit()
 
 
-    print("firefox start")
 
+    print("edge start")
     try:
         edge = webdriver.Edge()
         test.run(edge,index_pages)
@@ -148,7 +149,7 @@ def Main():
             edge.quit()
 
 
-    print("edge start")
+
     print("all tests on all browsers completed")
 
 Main()
