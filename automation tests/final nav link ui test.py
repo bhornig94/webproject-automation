@@ -120,7 +120,7 @@ def Main():
     finally:
         if chrome:
             chrome.quit()
-            print("Closed Edge.")
+
 
     print("chrome start")
 
@@ -133,7 +133,7 @@ def Main():
     finally:
         if firefox:
             firefox.quit()
-            print("Closed FireFox.")
+
 
     print("firefox start")
 
@@ -146,9 +146,9 @@ def Main():
     finally:
         if edge:
             edge.quit()
-            print("Closed edge.")
+
 
     print("edge start")
-
+    print("all tests on all browsers completed")
 
 Main()
