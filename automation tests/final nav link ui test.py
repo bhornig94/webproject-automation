@@ -78,7 +78,7 @@ while Pcount <= 2:
 
         except Exception as e:
             # Catch any error during finding or interacting with the link
-            print(f"Error interacting with link #{count} on page {href_value}")
+            print(f"Error interacting with link #{count} on page {index_page[Pcount]}: {e}")
             fails+=1
 
         # Increment the link counter to move to the next link
